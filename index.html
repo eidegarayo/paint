@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+  content="width=device-width, initial-scale=1">
+  <title>Atrápalo Paint</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      
+      <section id="paint">
+        
+        <div id="tools">
+          
+          <button id="undo" class="tool tool-btn"><i class="material-icons">undo</i></button>
+          <button id="redo" class="tool tool-btn"><i class="material-icons">redo</i></button>
+
+          <div id="line">
+            <div id="line-draw" class="tool"></div>
+            <input id="line-weight" type="range" class="tool tool-line" min="1" max="10">
+          </div>
+    
+          <div id="tool-colors" class="tool">
+            <input id="tool-color" type="color" value="#000000">
+          </div>        
+        
+        </div><!-- /tools -->
+
+        <div id="canvas-container"></div>
+        
+      </section>
+
+    </div><!-- /container -->
+    <script src="scripts/whiteCanvasImage.js"></script>
+    <script src="scripts/DefaultCanvas.js"></script>
+    <script src="scripts/draw.js"></script>
+    <script src="scripts/canvasEventsListeners.js"></script>
+    <script src="scripts/tools.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

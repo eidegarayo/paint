@@ -1,0 +1,12 @@
+{
+  "name": "paint-vanillajs",
+  "version": "1.0.0",
+  "description": "Paint lite",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server ./tests/",
+    "start": "http-server"
+  },
+  "author": "Eva Ibañez de Garayo",
+  "license": "ISC"
+}
